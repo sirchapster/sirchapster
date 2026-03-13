@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sir Chapster | Official Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+body{
+background:#0a0a0a;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav h2{
+font-weight:900;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+font-size:14px;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+url("https://images.unsplash.com/photo-1511379938547-c1f69419868d");
+background-size:cover;
+}
+
+.hero h1{
+font-size:70px;
+font-weight:900;
+}
+
+.hero p{
+color:#bbb;
+margin:20px 0;
+}
+
+.button{
+background:#ff6a3d;
+padding:15px 35px;
+border-radius:5px;
+text-decoration:none;
+color:black;
+font-weight:700;
+}
+
+.section{
+padding:80px 10%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:50px;
+font-size:40px;
+}
+
+.music-player{
+text-align:center;
+}
+
+iframe{
+width:100%;
+max-width:700px;
+height:166px;
+border:none;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.video-grid iframe{
+height:200px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+.tour{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.show{
+background:#141414;
+padding:25px;
+border-radius:8px;
+}
+
+.contact{
+text-align:center;
+}
+
+input, textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+background:#1a1a1a;
+color:white;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#111;
+margin-top:60px;
+color:#777;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>Sir Chapster</h2>
+
+<div>
+
+<a href="#music">Music</a>
+<a href="#video">Videos</a>
+<a href="#gallery">Gallery</a>
+<a href="#tour">Tour</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+
+<section class="hero">
+
+<h1>Sir Chapster</h1>
+
+<p>New Single Out Now</p>
+
+<a class="button"
+href="https://on.soundcloud.com/rIqzE7nIP4aIIYpXly"
+target="_blank">
+Listen to Durty Dancing
+</a>
+
+</section>
+
+
+<section class="section" id="music">
+
+<h2>Latest Release</h2>
+
+<div class="music-player">
+
+<h3>Durty Dancing</h3>
+
+<iframe
+src="https://w.soundcloud.com/player/?url=https://on.soundcloud.com/rIqzE7nIP4aIIYpXly">
+</iframe>
+
+</div>
+
+</section>
+
+
+<section class="section" id="video">
+
+<h2>Music Video</h2>
+
+<div class="video-grid">
+
+<iframe
+src="https://www.youtube.com/embed/uGXlwpwBA-0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+
+
+<section class="section" id="gallery">
+
+<h2>Behind The Scenes</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4">
+
+<img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad">
+
+<img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae">
+
+</div>
+
+</section>
+
+
+<section class="section" id="tour">
+
+<h2>Upcoming Shows</h2>
+
+<div class="tour">
+
+<div class="show">
+
+<h3>September 15, 2025</h3>
+
+<p>Brooklyn, NY</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section contact" id="contact">
+
+<h2>Booking</h2>
+
+<p>Email for bookings and collaborations</p>
+
+<form action="mailto:chapster.sir@gmail.com" method="post">
+
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Message"></textarea>
+
+<br>
+
+<button class="button">Send Message</button>
+
+</form>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Sir Chapster</p>
+
+</footer>
+
+</body>
+</html>
